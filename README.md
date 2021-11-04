@@ -1,7 +1,7 @@
-# aprendizaje
-Este repo es para mostrar los conocimientos adquiridos en el proceso de aprendizaje autodidacta
+# my training
+Here I display the knowledge that I have obtained by my learning pathway
 
 <h2>calculadora</h2>
 
-Típico proyecto de entrada a JS. Me sirvió para entrenar habilidades no sólo de JS sino tambien de HTML y CSS.<br>
-Actualmente es muy simple, y bastante fea, pero la voy a mejorar!  
+Typical project to kick off in JS. It was useful to train HTML and CSS, apart from JS.<br>
+Currently it is very simple and a little bit ugly but I'm going to improve it!  
