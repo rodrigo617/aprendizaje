@@ -3,19 +3,21 @@ import Productos from './components/Productos'
 import Layout from './components/Layout'
 import Navbar from './components/Navbar'
 import Title from './components/Title'
-import { computeHeadingLevel } from '@testing-library/dom'
+
 
 class App extends Component{
- state = {
-   productos: [
+state = {
+  productos: [
       {name: 'tomates', price: 1500, img: '/productos/tomate.jpg'},
       {name: 'arbejas', price: 2500, img: '/productos/arbejas.jpg'},
       {name: 'lechuga', price: 500, img: '/productos/lechuga.jpg'}, 
-   ],
-   carro: [],
+  ],
+  carro: [],
+  esCarroVisible: false,
   }
   agregarAlCarro = (producto) => {
     const { carro } = this.state
+    console.log('hola')
     // preguntar si dentro del carro de compras hay un elemento que tenga el mismo nombre que mi producto
     if (carro.find(x => x.name === producto.name)) {
       const newCarro = carro.map(x => x.name === producto.name
@@ -26,20 +28,31 @@ class App extends Component{
         : x)
       return this.setState({ carro: newCarro})
     }
- 
+
     return this.setState({
       carro: this.state.carro.concat({
         ...producto,
         cantidad: 1,
       })
     })
+  }
 
-
-   }
+  mostrarCarro = () => {
+    if(!this.state.carro.length){
+      return
+    }
+    this.setState({ esCarroVisible: !this.state.esCarroVisible })
+  }
+  
   render() {
-     return(
+    const { esCarroVisible } = this.state
+    return(
       <div>
-        <Navbar carro={this.state.carro} />
+        <Navbar 
+          carro={this.state.carro} 
+          esCarroVisible={esCarroVisible} 
+          mostrarCarro={this.mostrarCarro} 
+        />
         <Layout>
           <Title />
           <Productos
