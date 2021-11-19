@@ -12,18 +12,18 @@ Currently it is very simple and a little bit ugly but I'm going to improve it!
 
 <h2>shopping_cart</h2>
 
-This folder contains a course focused ONLY on react and its ecosystem.Here I will learn (I am still studying):
-
-React concepts
-Class-based components
-Component life cycle
-Functional components
-Hooks and Hooks Custom
-Context
-Redux
-Forms with Formik
-Stylish components
-Performance in React, how to measure it and how to optimize it
-Context
-React router
-NextJS
+This folder contains a course focused ONLY on react and its ecosystem. Here I will learn (I am still studying):<br>
+<br>
+React concepts<br>
+Class-based components<br>
+Component life cycle<br>
+Functional components<br>
+Hooks and Hooks Custom<br>
+Context<br>
+Redux<br>
+Forms with Formik<br>
+Stylish components<br>
+Performance in React, how to measure it and how to optimize it<br>
+Context<br>
+React router<br>
+NextJS<br>
