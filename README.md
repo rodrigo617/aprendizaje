@@ -14,6 +14,14 @@ Currently it is very simple and a little bit ugly but I'm going to improve it!
 
 ...
 
+<h2>hook-1</h2>
+
+In this lab I worked with hooks. I learned how to use:<br>
+
+- useEffect<br>
+- useReducer<br>
+- useState<br>
+
 <h2>shopping_cart</h2>
 
 In this lab I learned how to make a shopping cart using react. Here I learned: <br>
