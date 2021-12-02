@@ -16,6 +16,7 @@ Currently it is very simple and a little bit ugly but I'm going to improve it!
 > react
 
 - uncontrolled components
+- controlled components
 
 
 ## hook-1
