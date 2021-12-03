@@ -15,6 +15,8 @@ Currently it is very simple and a little bit ugly but I'm going to improve it!
 ## forms
 > react
 
+In this lab I worked with forms. I learned how to use:
+
 - uncontrolled components
 - controlled components
     - select
