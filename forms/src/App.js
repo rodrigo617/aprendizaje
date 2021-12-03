@@ -3,13 +3,22 @@
 
 import { useState} from 'react' //importo un hook
 const App = () => {
-    const [value, setValue] = useState ({normal: 'por defecto', texto:'', select: '' }) //uso un objeto literal para utilizar mas de un campo a rellenar
-    const handleChange = (e) => {
+    const [value, setValue] = useState ({
+        normal: 'por defecto', 
+        texto:'', 
+        select: '', 
+        check:false,
+        estado: 'feliz'
+    }) //uso un objeto literal para utilizar mas de un campo a rellenar
+    const handleChange = ({ target }) => {
+       // console.log(e.target.type, e.target.checked)
         //setValue(e.target.value) //cada vez que actualizo este valor, gatillo un nuevo render
-        setValue({ 
-            ...value,
-            [e.target.name]: e.target.value 
-        })//propiedad dinamica que toma el valor del campo que modifique
+        setValue((state) => ({ 
+            ...state,
+            [target.name]: target.type === 'checkbox' 
+                ? target.checked 
+                : target.value 
+        }))//propiedad dinamica que toma el valor del campo que modifique
     }
     console.log(value)
     return (
@@ -24,6 +33,37 @@ const App = () => {
                 <option value='chanchitofeliz'>Chanchito feliz</option>
                 <option value='chanchitotriste'>Chanchito triste</option>
             </select>
+
+            <input 
+                type="checkbox"
+                name="check"
+                onChange={handleChange}
+                checked={value.check}
+            /> 
+            <div>  
+                <label>Chancho</label>
+                <input 
+                onChange={handleChange} 
+                type="radio" 
+                value="feliz" 
+                name="estado" 
+                checked={value.estado === 'feliz'}
+                /> Feliz
+                <input 
+                onChange={handleChange} 
+                type="radio" 
+                value="triste" 
+                name="estado" 
+                checked={value.estado === 'triste'}
+                /> Triste
+                <input 
+                onChange={handleChange} 
+                type="radio" 
+                value="felipe" 
+                name="estado" 
+                checked={value.estado === 'felipe'}
+                /> Felipe
+            </div>
         </div>
     )
 }

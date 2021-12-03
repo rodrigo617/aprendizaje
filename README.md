@@ -17,6 +17,10 @@ Currently it is very simple and a little bit ugly but I'm going to improve it!
 
 - uncontrolled components
 - controlled components
+    - select
+    - checkbox
+    - radio button
+
 
 
 ## hook-1
