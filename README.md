@@ -12,6 +12,10 @@ In this lab I have learned how to move the placeholder when I load an entry in t
 Typical project to kick off in JS. It was useful to train HTML and CSS, apart from JS.
 Currently it is very simple and a little bit ugly but I'm going to improve it!  
 
+## gestor-usuarios
+
+In this lab, I review the use of hooks and the handling of forms
+
 ## forms
 > react
 
