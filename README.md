@@ -14,12 +14,13 @@ Currently it is very simple and a little bit ugly but I'm going to improve it!
 
 ## gestor-usuarios
 > react
-In this lab, I review the use of hooks and the handling of forms
+In this lab, I review the use of hooks and the handling of forms. 
 
 ## forms
 > react
 
-In this lab I worked with forms. I learned how to use:
+In this lab, I review the use of hooks and the handling of forms. I worked creating components and finally optimized the application so that the rendering is done at the form level
+
 
 - uncontrolled components
 - controlled components
