@@ -9,7 +9,11 @@ const useFormulario = (inicial) => {
         })
     }
 
-    return [formulario, handleChange]
+    const reset = () => {
+        setformulario(inicial)
+    }
+
+    return [formulario, handleChange, reset]
 }
 
 export default useFormulario
