@@ -12,8 +12,14 @@ In this lab I have learned how to move the placeholder when I load an entry in t
 Typical project to kick off in JS. It was useful to train HTML and CSS, apart from JS.
 Currently it is very simple and a little bit ugly but I'm going to improve it!  
 
+## formik
+> react
+
+In this lab I learned how to create a form using formik
+
 ## gestor-usuarios
 > react
+
 In this lab, I review the use of hooks and the handling of forms. I worked creating components and finally optimized the application so that the rendering is done at the form level
 
 ## forms
