@@ -17,10 +17,6 @@ Currently it is very simple and a little bit ugly but I'm going to improve it!
 
 In this lab I learned how to create a form using formik
 
-## gestor-usuarios
-> react
-
-In this lab, I review the use of hooks and the handling of forms. I worked creating components. Finally I optimized the application to make it renders at form level
 
 ## forms
 > react
@@ -34,6 +30,10 @@ In this lab I worked with forms. I learned how to use:
     - checkbox
     - radio button
 
+## gestor-usuarios
+> react
+
+In this lab, I review the use of hooks and the handling of forms. I worked creating components. Finally I optimized the application to make it renders at form level
 
 
 ## hook-1
