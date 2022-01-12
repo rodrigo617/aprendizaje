@@ -48,7 +48,7 @@ In this lab I worked with hooks. I learned how to use:
 ## image_search_engine
 >react
 
-In this lab I learned how to find images from a website (www. unsplash. com) and use them in my project.
+In this lab I made an image search engine using what I know from Formik and React.
 
 ## shopping_cart
 > react
