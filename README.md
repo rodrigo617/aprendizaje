@@ -35,6 +35,11 @@ In this lab I worked with forms. I learned how to use:
 
 In this lab, I review the use of hooks and the handling of forms. I worked creating components. Finally I optimized the application to make it renders at form level
 
+## google_speech_synthesis
+> javaScript
+
+In this laboratory use the Google speech synthesis API to read the entered text
+
 
 ## hook-1
 >react
