@@ -62,3 +62,8 @@ In this lab I learned how to make a shopping cart using react. Here I learned:
 
 - React concepts 
 - Class-based components 
+
+## speech_recognition
+> javaScript
+
+In this lab I learned how to do speech recognition using the webkitSpeechRecognition API
