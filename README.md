@@ -67,3 +67,8 @@ In this lab I learned how to make a shopping cart using react. Here I learned:
 > javaScript
 
 In this lab I learned how to do speech recognition using the webkitSpeechRecognition API
+
+## styled
+> React
+
+In this lab I review the use of styled components
