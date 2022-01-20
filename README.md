@@ -55,6 +55,11 @@ In this lab I worked with hooks. I learned how to use:
 
 In this lab I made an image search engine using what I know from Formik and React.
 
+## samsung_calculator
+> react
+
+Improved version of JS calculator. I used the best practices I've learned up to this moment.
+
 ## shopping_cart
 > react
 
