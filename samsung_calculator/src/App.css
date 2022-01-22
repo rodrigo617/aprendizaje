@@ -1,3 +1,29 @@
 body {
-  background: linear-gradient(to right, gray,pink, white);
+  background: linear-gradient(to right,#aaa, white);
+}
+
+.App {
+  height: 100px;
+  width: 100%;
+}
+.calculator-grid {
+  background-color: black;
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  min-height: 80vh;
+  grid-template-columns: repeat(4, 80px);
+  grid-template-rows: minmax(80px, auto) repeat(5, 80px); 
+}
+
+.output {
+  grid-column: 2/ -2;
+  margin-bottom: 5rem;
+  background-color: black;
+  display: flex;
+  border-radius: 1rem;
+  padding: 50px;
+  flex-direction: column;
+  align-items: flex-end;
+  color: white;
 }
