@@ -9,6 +9,8 @@
 <script>
 let text = "";
 
+"Comment"
+
 for (let i = 0; i < 5; i++) {
   text += "The number is " + i + "<br>";
 }
