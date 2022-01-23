@@ -42,8 +42,8 @@ function App() {
     <div className="App">
       <div className='calculator-grid'>
         <div className='output'>
-          <div className='previus-operant'>1235+2235</div>
-          <div className='current-operent'>22</div>
+          <div className='previus-operant'>12331+2235</div>
+          <div className='current-operant'>22</div>
         </div>
         <div className='tools'></div>
         <RedButton>C</RedButton>
