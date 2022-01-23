@@ -10,7 +10,6 @@
 let text = "";
 
 "Simpĺe comment"
-"Second simple comment"
 for (let i = 0; i < 5; i++) {
   text += "The number is " + i + "<br>";
 }
