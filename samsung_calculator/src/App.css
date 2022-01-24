@@ -7,6 +7,7 @@ body {
   width: 100%;
 }
 .calculator-grid {
+  
   background-color: black;
   display: grid;
   justify-content: center;
@@ -17,13 +18,38 @@ body {
 }
 
 .output {
-  grid-column: 2/ -2;
+  margin-left: 10px;
+  width: 240px;
+  height: 100px;
+  grid-column: 1/ -2;
   margin-bottom: 5rem;
-  background-color: black;
+  background-color: rgb(128, 128, 0, 0.4);
   display: flex;
   border-radius: 1rem;
-  padding: 50px;
-  flex-direction: column;
+  padding: 30px;
   align-items: flex-end;
+  justify-content: space-around;
+  flex-direction: column;
   color: white;
+  word-wrap: break-word;
+  word-break: break-all;
+  
+  
+
+}
+
+.output .previus-operant {
+  color: white;
+  align-content: flex;
+  text-align: right;
+  font-size: 20px;
+
+}
+
+.output .current-operant {
+  color: grey;
+  align-content: flex;
+  text-align: right;
+  font-size: 20px;
+
 }
