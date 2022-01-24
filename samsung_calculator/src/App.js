@@ -1,5 +1,6 @@
 import './App.css'
 import styled from "styled-components"
+import { useState } from "react";
 
 const Button = styled.button`
   color: white;
@@ -38,33 +39,53 @@ const IqualButton = styled(Button)`
 
 
 function App() {
+
+  const [number1, setNumber1] = useState("")
+  const [number2, setNumber2] = useState("")
+  const [currentOperation, setCurrentOperation] = useState("")
+  const [result, setResult] = useState("")
+
+  function clickNumber(val){
+
+    if (currentOperation === ""){
+       setNumber1(number1 + val);
+    } else {
+       setNumber2(number2 + val)
+    } 
+  }
+
+   function clickOperation(val){
+     setCurrentOperation(val)
+   
+  }
+
   return (
     <div className="App">
       <div className='calculator-grid'>
         <div className='output'>
-          <div className='previus-operant'>1235+2235</div>
-          <div className='current-operent'>22</div>
+          <div className='previus-operant'>{currentOperation ? number1 + currentOperation : ""}</div>
+          <div className='current-operent'>{currentOperation ? number1 : number2}</div>
         </div>
         <div className='tools'></div>
         <RedButton>C</RedButton>
         <GreenButton>()</GreenButton>
-        <GreenButton>%</GreenButton>
-        <GreenButtonA>÷</GreenButtonA>
-        <Button>7</Button>
-        <Button>8</Button>
-        <Button>9</Button>
-        <GreenButtonA>x</GreenButtonA>
-        <Button>4</Button>
-        <Button>5</Button>
-        <Button>6</Button>
-        <GreenButtonA>-</GreenButtonA>
-        <Button>1</Button>
-        <Button>2</Button>
-        <Button>3</Button>
-        <GreenButtonA>+</GreenButtonA>
-        <Button>+/-</Button>
-        <Button>0</Button>
-        <Button>.</Button>
+        <GreenButton onClick={() => clickOperation("%")} >%</GreenButton>
+        <GreenButtonA onClick={() => clickOperation("/")} >÷</GreenButtonA>
+        <Button onClick={() => clickNumber(7)} >7</Button>
+        <Button onClick={() => clickNumber(8)} >8</Button>
+        <Button onClick={() => clickNumber(9)} >9</Button>
+        <GreenButtonA onClick={() => clickOperation("x")} >x</GreenButtonA>
+        <Button onClick={() => clickNumber(4)} >4</Button>
+        <Button onClick={() => clickNumber(5)} >5</Button>
+        <Button onClick={() => clickNumber(6)} >6</Button>
+        <GreenButtonA onClick={() => clickOperation("-")} >-</GreenButtonA>
+        <Button onClick={() => clickNumber(1)} >1</Button>
+        <Button onClick={() => clickNumber(2)} >2</Button>
+        <Button onClick={() => clickNumber(3)} >3</Button>
+        <GreenButtonA onClick={() => clickOperation("+")} >+</GreenButtonA>
+        <Button onClick={() => clickOperation("+/-")} >+/-</Button>
+        <Button onClick={() => clickNumber(0)} >0</Button>
+        <Button >.</Button>
         <IqualButton>=</IqualButton>
       </div>
     </div>
