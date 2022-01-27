@@ -39,7 +39,6 @@ const IqualButton = styled(Button)`
 
 
 function App() {
-  
   const [number1, setNumber1] = useState("")
   const [number2, setNumber2] = useState("")
   const [currentOperation, setCurrentOperation] = useState("")
