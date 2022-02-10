@@ -55,6 +55,16 @@ In this lab I worked with hooks. I learned how to use:
 
 In this lab I made an image search engine using what I know from Formik and React.
 
+## login
+>react
+
+In this lab, I did logIn and logOut using an authentication service (Auth0).
+
+## means
+>react
+
+Here I learned how to improve the performance of a web app.
+
 ## samsung_calculator
 > react
 
