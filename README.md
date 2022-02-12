@@ -60,7 +60,7 @@ In this lab I made an image search engine using what I know from Formik and Reac
 
 In this lab, I did logIn and logOut using an authentication service (Auth0).
 
-## means
+## performance
 >react
 
 Here I learned how to improve the performance of a web app.
