@@ -11,7 +11,10 @@ export function Home() {
 
     console.log(user)
 
-    return <div>home</div>
+    return 
+    <div>
+        
+    </div>
 }
 
 export default Home
