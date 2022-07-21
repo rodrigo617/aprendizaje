@@ -1,7 +1,8 @@
 import { useState } from "react"
 import { useAuth } from "../context/authContext"
 import { useNavigate } from "react-router-dom"
-import { async } from "@firebase/util"
+import { Alert } from "./Alert"
+
 
 export function Login() {
 
@@ -10,7 +11,7 @@ export function Login() {
         password: ''
     })
     
-    const { login } = useAuth()
+    const { login, loginWithGoogle } = useAuth()
     const navigate = useNavigate()
     const [error, setError] = useState()
 
@@ -32,11 +33,21 @@ export function Login() {
                 setError(error.message)
 
         }
+    }
+    
+    const handleGoogleSignin = async () => {
+        try {
+            await loginWithGoogle()
+            navigate('/') 
+        } catch (error) {
+            setError(error.message)
+        }
 
     }
+
     return (
         <div>
-            {error && <p>{error}</p>}
+            {error && <Alert message={error} />}
             <form onSubmit={handleSubmit}>
             <label htmlFor='email'>Email</label>
             <input 
@@ -56,6 +67,8 @@ export function Login() {
 
             <button>Login</button>
         </form>
+
+        <button onClick={handleGoogleSignin}>Login with Google</button>
         </div>
     )
 }
