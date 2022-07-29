@@ -1,28 +1,17 @@
 const express = require('express')
 const bodyParser = require('body-parser')
-const router = express.Router()
+//const router = require('./components/message/network')
+const router = require('./network/routes')
 
 var app = express()
 app.use(bodyParser.json())
 app.use(bodyParser.urlencoded({extended: false}))
-app.use(router)
+//app.use(router)
+router(app)
 
-router.get('/message', function(req, res) {
-    console.log(req.headers)
-    res.header({
-        "custom-header": "valor personalizado"
-    })
-    res.send('Lista de mensaje')
-})    
-router.post('/message', function(req, res) {
-    console.log(req.query)
-    console.log(req.body)
-    res.status(201).send({error: '', body: 'creado correctamente'})
-})
 
-//app.use('/', function(req, res) {
-//    res.send('Hola')
-//})
+app.use('/app', express.static('public'))
+
 
 app.listen(3000)
 console.log('La aplicación esta escuchando en http://localhost:3000')
