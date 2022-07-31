@@ -1,3 +1,4 @@
+const { Model } = require('mongoose')
 const store = require('./store')
 
 function addMessage(user, message) {
@@ -20,13 +21,28 @@ function addMessage(user, message) {
     
 }
 
-function getMessages() {
+function getMessages(filterUser) {
     return new Promise ((resolve, reject) =>{
-        resolve(store.list())
+        resolve(store.list(filterUser))
     })
 }
+
+function updateMessage(id, message) {
+    return new Promise(async(resolve, reject) => {
+        console.log(id)
+        console.log(message)
+        if(!id || !message) {
+            reject('Invalid data')
+            return false
+        }
+        const result = await store.updateText(id, message)
+        resolve(result)
+    })
+}
+
 
 module.exports = {
     addMessage,
     getMessages,
+    updateMessage,
 }
