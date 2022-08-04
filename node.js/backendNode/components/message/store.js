@@ -1,12 +1,5 @@
-const db = require('mongoose')
-const Model = require('./model')
 
-//mongodb+srv://user:user1234@telegrom.l6j9err.mongodb.net/?retryWrites=true&w=majority
-db.Promise = global.Promise
-db.connect('mongodb+srv://user:user1234@telegrom.l6j9err.mongodb.net/?retryWrites=true&w=majority', {
-    useNewUrlParser: true,
-})
-console.log('[db] Contectada con exito')
+const Model = require('./model')
 
 function addMessage(message) {
     //list.push(message)
