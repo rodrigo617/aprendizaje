@@ -12,3 +12,4 @@ const numerosFiltrados = numeros.filter( x => x > 2 & x< 8)
 
 const jugadoresFiltrados = jugadores.filter( x => x.posicion == 'Defensor')
 console.log(jugadoresFiltrados)
+
