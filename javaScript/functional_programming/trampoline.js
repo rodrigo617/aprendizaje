@@ -9,8 +9,9 @@ const trampoline = fn => (...args) => {
 const suma = (number, sum = 0) => (
     number === 0
     ? sum
-    : suma(number-1, sum + number)
+    : () => suma(number-1, sum + number)
 )
 
-const r = suma(10000)
+const tsuma = trampoline(suma)
+const r = tsuma(10000)
 console.log(r)
